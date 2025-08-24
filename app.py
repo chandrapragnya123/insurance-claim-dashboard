@@ -147,9 +147,7 @@ st.write(f"**Total Columns:** {df.shape[1]}")
 st.write("**Columns:**", list(df.columns))
 
 # Show missing values
-missing = df.isnull().sum()
-st.write("**Missing Values:**")
-st.dataframe(missing[missing > 0])
+
 
 # Show numerical statistics
 st.markdown("#### Numerical Columns Summary")
